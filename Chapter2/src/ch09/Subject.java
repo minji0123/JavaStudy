@@ -12,14 +12,14 @@ class Student{
     String studentName;
     Subject korea;
     Subject math;
-    //이렇게 클래스로 정의한 변수는 반드시 new로 생성자 처리를 해줘야 한다.
+    // 이렇게 클래스로 정의한 변수는 반드시 new로 생성자 처리를 해줘야 한다.
 
-    Student(int studentId, String StudentName){
+    Student(int studentId, String studentName){
         this.studentId = studentId;
         this.studentName = studentName;
-
         korea = new Subject();
         math = new Subject();
+        // 이렇게 해줘야 한다.
     }
 
     public void setKoreaSubject( String name, int score){
@@ -37,8 +37,15 @@ class Student{
 }
 class SubjectTest {
     public static void main(String[]args){
+        Student studentLee = new Student(100, "Lee");
+        studentLee.setKoreaSubject("국어", 100);
+        studentLee.setMathSubject("수학", 100);
 
+        Student studentKim = new Student(100, "Kim");
+        studentKim.setKoreaSubject("국어", 50);
+        studentKim.setMathSubject("수학", 60);
 
+        studentLee.showScoreInfo();
+        studentKim.showScoreInfo();
     }
-
 }
