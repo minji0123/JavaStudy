@@ -12,7 +12,7 @@ class Student{
     String studentName;
     Subject korea;
     Subject math;
-    // 이렇게 클래스로 정의한 변수는 반드시 new로 생성자 처리를 해줘야 한다.
+    // 이렇게 클래스로 정의한 변수는 반드시 new 로 생성자 처리를 해줘야 한다.
 
     Student(int studentId, String studentName){
         this.studentId = studentId;
