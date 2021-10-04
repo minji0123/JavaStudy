@@ -15,14 +15,3 @@ public class Student {
         studentName = name;
     }
 }
-
-
-
-//
-//class Main {
-//    public static void main(String[] args) {
-//        Student student1 = new Student();
-//        student1.studentName = "가민지";
-//        student1.setStudentName("가민지");
-//    }
-//}
