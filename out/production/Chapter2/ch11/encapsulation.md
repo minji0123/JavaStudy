@@ -27,3 +27,4 @@ StringBulider와 StringBuffer는 memory에 값을 append한다.
    1. Thread safety은 멀티 스레드 프로그래밍에서 일반적으로 어떤 함수나 변수, 혹은 객체가 여러 스레드로부터 동시에 접근이 이루어져도 프로그램의 실행에 문제가 없음을 뜻한다.
    2. 문자열을 변경가능하지만, multiple thread환경에서 안전한 클래스이다.
    3. 스레드들이 StringBuffer클래스에 접근을 해도 값을 바꿀 수 없다.
+
