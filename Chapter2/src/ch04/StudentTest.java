@@ -21,5 +21,8 @@ public class StudentTest {
         System.out.println(studentKim);
         System.out.println(studentLee);
 
+        Student studentcons0 = new Student(1234,"민지","경기도 성남시");
+        Student studentcons1 = new Student(1234,"민석","경기도 성남시");
+
     }
 }
