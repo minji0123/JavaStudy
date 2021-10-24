@@ -20,7 +20,7 @@ public class EmployeeTest {
         System.out.println(Employee.serialNum);
 //        System.out.println(Employee.employeeId);
 
-        
+
         // 3. static 변수로, 인스턴스에 사번 부여하기
         Employee employeeLee = new Employee();
         employeeLee.setEmployeeName("이순신");
