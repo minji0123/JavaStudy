@@ -4,12 +4,11 @@ public class BookTest {
 
     public static void main(String[] args) {
 
-
         Book book1 = new Book();
 
-        Book book2 = new Book("부동산경매", "신종승");
+        Book book2 = new Book("부동산경매", "생택쥐페리");
 
-        book2.setTitle("이것이 자바다");
+        book2.setTitle("어린왕자");
         System.out.println(book2.getTitle()+book2.getAuthor());
     }
 }
