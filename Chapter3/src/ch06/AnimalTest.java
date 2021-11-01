@@ -1,4 +1,7 @@
 package ch06;
+
+import java.util.ArrayList;
+
 // 0. 부모클래스
 class Animal{
     public void move(){
@@ -53,10 +56,21 @@ public class AnimalTest {
         Animal eAnimal = new Eagle();
 
         // 4. main 메소드의 클래스로 인스턴스 생성성
-       AnimalTest test = new AnimalTest();
-        test.moveAnimal(hAnimal); // 부모꺼 메소드 사용가능 --> 형변환했기 때문이당
-        test.moveAnimal(tAnimal);
-        test.moveAnimal(eAnimal);
+//       AnimalTest test = new AnimalTest();
+//        test.moveAnimal(hAnimal); // 부모꺼 메소드 사용가능 --> 형변환했기 때문이당
+//        test.moveAnimal(tAnimal);
+//        test.moveAnimal(eAnimal);
+
+        // 4-1 arraylist로 출력해보기
+        ArrayList<Animal> animalList = new ArrayList<>();
+        animalList.add(hAnimal);
+        animalList.add(tAnimal);
+        animalList.add(eAnimal);
+
+        for(Animal animal : animalList){
+            animal.move();
+        }
+
     }
     
     // 0. moveAnimal()메소드는 AnimalTest 클래스의 것이다.
