@@ -11,7 +11,6 @@
  */
 package ch04;
 
-
 public class VIPCustomer extends Customer {
 
     private String agentID;
@@ -28,6 +27,8 @@ public class VIPCustomer extends Customer {
 
     // 상위클래스Customer와 다른 부분 : 10% 할인해주는 것
     @Override // 애노테이션. 컴파일러에게 특별한 정보를 제공해주는 역할
+    // 오버라이딩 : 상위 클래스에 정의된 메소드의 구현 내용이 하위 클래스에서 구현할 내용과 맞지 않는 경우,
+    // 하위클래스에서 동일한 이름의 메소드를 재정의할 수있음
     public int calcPrice(int price) {
         bonusPoint += price * bonusRatio;
         price -= (int)(price*salesRatio);
