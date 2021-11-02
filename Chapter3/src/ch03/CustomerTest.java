@@ -42,7 +42,7 @@ public class CustomerTest {
 
         // 형 변환
         Customer vc = new VIPCustomer(12345,"김영희");
-        // 타입은 Customer이다. customer변수와 메소드만 사용 가능
+        // vc의 데이터 타입은 Customer이다. customer변수와 메소드만 사용 가능
         // vc.
     }
 }

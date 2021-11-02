@@ -30,5 +30,15 @@ public class CustomerTest {
             System.out.println(customer.getCustomerName()+"님이 " + cost+ "원 지불");
             System.out.println(customer.getCustomerName()+"님의 현재 보너스 포인트 : "+customer.bonusPoint);
         }
+        // ch08 다운캐스팅 오류 예시
+//        VIPCustomer VC = (VIPCustomer)customerE;
+        // GOLD 고객의 등급을 VIP로 올릴 수는 없다
+
+        // ch08 if 문으로 오류 해결
+        if (customerE instanceof GoldCustomer){
+            GoldCustomer vc = (GoldCustomer)customerE;
+            System.out.println(customerE.showCustomerInfo());
+        }
+
     }
 }

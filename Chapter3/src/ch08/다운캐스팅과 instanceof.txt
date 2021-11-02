@@ -1,0 +1,27 @@
+[다운캐스팅 downcasting]
+- 업캐스팅된 클래스를 다시 __원래의 타입으로__ 형 변환
+- Object 클래스에서 원래 클래스로 돌아갈 때에도 다운캐스팅
+
+- 하위 클래스로의 형 변환은 명시적으로 해야 함
+    - 형변환     : Custmor vc = new VIPCustomer();          // 묵시적
+    - 다운캐스팅 : VIPCustomer vcCustomer = (VIPCustomer)vc; // 명시적
+
+- 명시적으로 변환 시 오류 발생할 수 있음
+    - ch06_CustomerTest
+        - GOLD 고객의 등급을 VIP 로 올릴 수는 없다
+        - if 문 + instanceof 로 오류를 빠져나가야 함
+             // ch08 if 문으로 오류 해결
+                if (customerE instanceof GoldCustomer){
+                    GoldCustomer vc = (GoldCustomer)customerE;
+                    System.out.println(customerE.showCustomerInfo());
+                }
+
+
+[instanceof를 이용하여 인스턴스의 형 체크]
+- 원래 인스턴스의 형이 맞는지 여부를 체크하는 키워드
+- 맞으면 true, 아니면 false 반환
+
+[특이사항]
+- 하위클래스만의 메소드를 호출하고 싶을때 사용
+- 하지만 코드가 복잡해지기 때문에, 왠만하서는 오버라이딩 처리
+- 그럼에도, 원래 타입으로 돌려야 할 필요가 있을 때에만 다운캐스팅

@@ -26,6 +26,7 @@ public class Customer {
         bonusRatio = 0.01;
     }
 
+    // 오버라이드 할 메소드
     public int calcPrice(int price){
         this.bonusPoint += price * bonusRatio;
         return price; // 가격으로 return해줌 (왜?)

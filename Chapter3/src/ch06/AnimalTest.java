@@ -10,10 +10,9 @@ class Animal{
     // 0. 나중에 추상클래스에서도 다룸
     //  공통적으로 쓰일 수가 있는 메소드가 있으면
     // 그냥 상위클래스에다가 적어주자
-    public  void eating(){
-
-    }
+    public  void eating(){ }
 }
+
 // 0. 자식클래스
 // 1. 상속
 class Human extends Animal{
@@ -47,6 +46,7 @@ class Eagle extends Animal{
     }
 }
 
+
 public class AnimalTest {
     public static void main(String[] args) {
         // 3. 형변환
@@ -56,10 +56,10 @@ public class AnimalTest {
         Animal eAnimal = new Eagle();
 
         // 4. main 메소드의 클래스로 인스턴스 생성성
-//       AnimalTest test = new AnimalTest();
-//        test.moveAnimal(hAnimal); // 부모꺼 메소드 사용가능 --> 형변환했기 때문이당
-//        test.moveAnimal(tAnimal);
-//        test.moveAnimal(eAnimal);
+       AnimalTest test = new AnimalTest();
+        test.moveAnimal(hAnimal); // 부모꺼 메소드 사용가능 --> 형변환했기 때문이당
+        test.moveAnimal(tAnimal);
+        test.moveAnimal(eAnimal);
 
         // 4-1 arraylist로 출력해보기
         ArrayList<Animal> animalList = new ArrayList<>();
@@ -70,7 +70,6 @@ public class AnimalTest {
         for(Animal animal : animalList){
             animal.move();
         }
-
     }
     
     // 0. moveAnimal()메소드는 AnimalTest 클래스의 것이다.
