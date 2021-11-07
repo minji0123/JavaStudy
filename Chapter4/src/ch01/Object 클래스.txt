@@ -1,0 +1,15 @@
+[java.lang 패키지]
+1. String, Integer, System...
+2. 프로그래밍 시 import 하지 않아도 자동으로 import
+
+[Object 클래스]
+1. java.lang.Object 클래스
+2. 모든 클래스의 최상위 클래스
+    - 모든 클래스는 Object 에서 상속받고, Object 클래스의 메서드 중 일부는 (final 이 아닌)재정의해서 사용할 수 있음
+    - 재정의해서 사용할 수 없는 메서드는 final 로 선언되어있음
+3. 컴파일러가 자동으로 extends Object 를 추가함
+    - class Student => class Student extends Object
+
+[toString() 메서드]
+1. 객체의 정보를 String 으로 바꿔서 사용할 때 쓰임
+2. String 이나 Integer 클래스는 이미 재정의 되어 있음

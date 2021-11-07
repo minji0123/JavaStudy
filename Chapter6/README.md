@@ -21,3 +21,8 @@ ch08. 예외처리를 하는 이유 + 자바에서 제공되는 클래스들
 
 ch09. 예외 처리하기와 미루기   
 - try catch, try catch finally, try-with-resources, try catch-throws
+
+ch10. 사용자 정의 예외클래스와 활용
+- throws 와 if 문 활용
+
+ch11. 오류의 로그를 남기기 (java.util.logging.Logger)
