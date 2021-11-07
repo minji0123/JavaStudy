@@ -13,7 +13,5 @@ public class ManualCar extends Car {
     }
 
     @Override
-    public void wiper() {
-
-    }
+    public void wiper() {    }
 }

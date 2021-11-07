@@ -1,18 +1,19 @@
 ##[인터페이스]
-0. {}가 없는 클래스
+1. {}가 없는 클래스
     - {} : 구현코드
 
-1. 모든 메서드가 추상 메서드로 선언됨
+2. Class 대신 interface 를 사용
+
+3. 모든 메서드가 추상 메서드로 선언
     - public abstract
     - 직접 abstract 연산자를 적지 않아도 컴파일러가 자동으로 넣어줌
 
-2. 모든 변수가 상수로 선언됨
+4. 모든 변수가 상수로 선언됨
     - public static final
     - 직접 static final 연산자를 적지 않아도 컴파일러가 자동으로 넣어줌
 
-3. 자바 8 부터 디폴트 메서드(default method)와 정적 메소드(static method) 기능의 제공으로, 일부 구현 코드가 있음
+5. 자바 8 부터 디폴트 메서드(default method)와 정적 메소드(static method) 기능의 제공으로, 일부 구현 코드가 있음
 
-4. Class 대신 interface 를 사용
 
 
 ##[인터페이스 정의와 구현]   
@@ -31,6 +32,7 @@
     - CompleteCalc는 Calc를 상속을 받은거는 아니지만, Calc타입이 구현되어있다.
 6. 다중상속
     - CompleteCalc는 interface의 다중 상속이 가능하다.
+
 
 ##[인터페이스 구현과 형 변환]
 1. 인터페이스를 구현한 클래스는, 인터페이스 형으로 선언한 변수로 형변환을 할 수 있다.

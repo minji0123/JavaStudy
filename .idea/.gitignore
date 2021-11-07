@@ -1,3 +1,10 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/.metadata/
+**/logs
+**/logs/debug.log
+*.log
+/debug.log
+debug.log
+debug?.log

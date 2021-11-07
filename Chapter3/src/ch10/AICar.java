@@ -13,9 +13,7 @@ public class AICar extends Car {
     }
 
     @Override
-    public void wiper() {
-
-    }
+    public void wiper() {    }
 
     @Override
     public void washCar() {
