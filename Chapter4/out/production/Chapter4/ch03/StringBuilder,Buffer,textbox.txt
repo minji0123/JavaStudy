@@ -1,0 +1,22 @@
+String, StringBuilder, StringBuffer, text block
+
+[1. String]
+    String str1 = new String("abc"); // 얘는 힙메모리에 인스턴스 생성
+    String str2 = "abc"; // 얘는 상수 풀에 있는 주소만 가리킴
+1. String 클래스를 직접 조작하면 문제가 생기는 경우가 있다.
+    - 별거 아니고 그냥 메모리 낭비
+2. 그래서 StringBuilder 나 StringBuffer 를 사용하는거임
+
+
+[2. StringBuilder, StringBuffer]
+1. 문자열을 여러번 연결하고 변경하고 할 때 사용하기 좋음
+2. char[](얘는 가변적) 를 맴버변수로 가짐
+    new 안하고 그냥 char[]를 변경해서 씀
+3. 마지막에 toString() 해주면 됨
+3. 두개의 차이는
+StringBuilder : 단일 쓰레드 프로그램
+StringBuffer : 멀티 쓰레드 프로그램에서 동기화 보장
+
+[3. text block]
+1. 자바 13부터 나온애여서 여기서는 못씀
+
